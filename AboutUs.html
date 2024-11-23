@@ -1,192 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website Footer</title>
+    <title>About Us - Travel Company</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Add custom styles for star rating -->
-    <style>
-        .star-rating {
-            color: #FFD700;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <!-- Reviews Section -->
-    <section class="py-16 px-4 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-8">
-                <p class="text-green-600 font-medium">Raving Reviews</p>
-                <h2 class="text-3xl font-bold text-gray-800">Travel Love Our Locals</h2>
-            </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Review Card 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <div class="star-rating mb-2">★★★★★</div>
-                    <h3 class="font-bold mb-2">Great day out With Bexper!</h3>
-                    <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad assumenda fuga illo iusto tempore magni.</p>
-                    <div class="flex items-center">
-                        <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full mr-3">
-                        <div>
-                            <p class="font-medium">Hotel User</p>
-                            <p class="text-sm text-gray-500">Bangkok, June 2023</p>
-                        </div>
-                    </div>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/image/logo.png" alt="Madhuram Travels Logo" class="w-80 h-10 object-contain">
                 </div>
 
-                <!-- Review Card 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <div class="star-rating mb-2">★★★★★</div>
-                    <h3 class="font-bold mb-2">Great Experience</h3>
-                    <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad assumenda fuga illo iusto tempore magni.</p>
-                    <div class="flex items-center">
-                        <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full mr-3">
-                        <div>
-                            <p class="font-medium">James User</p>
-                            <p class="text-sm text-gray-500">Bangkok, June 2023</p>
-                        </div>
-                    </div>
+                <nav class="hidden md:flex items-center space-x-6 flex-grow justify-center">
+                    <a href="Home.html" class="text-gray-700 hover:text-green-600">Home</a>
+                    <a href="AboutUs.html" class="text-gray-700 hover:text-green-600">About Us</a>
+                    <a href="ManageBooking.html" class="text-gray-700 hover:text-green-600">Manage Bookings</a>
+                    <a href="Gallery.html" class="text-gray-700 hover:text-green-600">Gallery</a>
+                    <a href="ContactUs.html" class="text-gray-700 hover:text-green-600">Contact Us</a>
+                </nav>
+
+                <div class="hidden md:block">
+                    <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">
+                        Agent Login
+                    </button>
                 </div>
 
-                <!-- Review Card 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <div class="star-rating mb-2">★★★★★</div>
-                    <h3 class="font-bold mb-2">A Great Hours With A cool Local</h3>
-                    <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad assumenda fuga illo iusto tempore magni.</p>
-                    <div class="flex items-center">
-                        <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full mr-3">
-                        <div>
-                            <p class="font-medium">Rachel User</p>
-                            <p class="text-sm text-gray-500">Bangkok, June 2023</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Navigation Arrows -->
-            <div class="flex justify-center mt-8 space-x-4">
-                <button class="p-2 rounded-full border hover:bg-gray-100">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                <!-- Mobile Menu Toggle -->
+                <button id="menu-toggle" class="md:hidden" aria-label="Toggle menu">
+                    <svg id="menu-icon" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
-                </button>
-                <button class="p-2 rounded-full border hover:bg-gray-100">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    <svg id="close-icon" class="w-6 h-6 text-gray-700 hidden" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
                     </svg>
                 </button>
             </div>
         </div>
-    </section>
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 flex flex-col justify-between">
+            <div class="flex items-center justify-between px-4 py-4">
+                <img src="./assets/image/logo.png" alt="Madhuram Travels Logo" class="w-80 h-10 object-contain">
 
-    <!-- Video Section -->
-    <section class="py-16 px-4 text-center">
-        <div class="max-w-6xl mx-auto">
-            <p class="text-green-600 font-medium">See In Motion</p>
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Watch Our Videos</h2>
-            
-            <div class="relative rounded-lg overflow-hidden">
-                <img src="https://via.placeholder.com/1200x600" alt="Video Thumbnail" class="w-full">
-                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div class="text-white max-w-2xl">
-                        <h3 class="text-3xl md:text-4xl font-bold mb-4">Become member & travel to foreign locations while paying domestic rates</h3>
-                        <button class="bg-white rounded-full p-4 hover:bg-gray-100">
-                            <svg class="w-12 h-12 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+                <button id="close-button">
+                    <svg id="close-icon-menu" class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
             </div>
-        </div>
+
+            <div class="flex flex-col items-center justify-center flex-grow space-y-6">
+                <a href="Home.html" class="text-gray-700 hover:text-green-600 text-xl">Home</a>
+                <a href="AboutUs.html" class="text-gray-700 hover:text-green-600 text-xl">About Us</a>
+                <a href="ManageBooking.html" class="text-gray-700 hover:text-green-600 text-xl">Manage Bookings</a>
+                <a href="Gallery.html" class="text-gray-700 hover:text-green-600 text-xl">Gallery</a>
+                <a href="ContactUs.html" class="text-gray-700 hover:text-green-600 text-xl">Contact Us</a>
+            </div>
+
+            <div class="relative">
+                <img src="./assets/image/side.png" alt="Footer Image"
+                    class="absolute left-0 bottom-0 w-80 h-auto opacity-50 transform rotate-30"
+                    style="top: auto; left: -83px;">
+            </div>
+        </nav>
+
+    </header>
+    <!-- Hero Section -->
+    <section class="relative h-[300px] md:h-[400px]">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            alt="Traveler" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <h1
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl md:text-5xl font-bold text-white">
+            ABOUT US</h1>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
-        <div class="max-w-6xl mx-auto px-4">
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- We Make It Easier Section -->
+        <section class="mb-16 md:flex md:items-center md:space-x-8">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">We Make It Easier for Everyone To Experience The World
+                </h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                    nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Travel Experience" class="w-full h-64 object-cover rounded-lg">
+            </div>
+        </section>
+
+        <!-- Live Bus Tracking Section -->
+        <section class="mb-16 md:flex md:flex-row-reverse md:items-center md:space-x-reverse md:space-x-8">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Live Bus Tracking</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                    nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1121&q=80"
+                    alt="Live Tracking" class="w-full h-64 object-cover rounded-lg">
+            </div>
+        </section>
+
+        <!-- Our Customer Support Section -->
+        <section class="mb-16 md:flex md:items-center md:space-x-8">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Our Customer Support</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                    nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+                    alt="Customer Support" class="w-full h-64 object-cover rounded-lg">
+            </div>
+        </section>
+
+        <!-- Great Comfort Section -->
+        <section class="mb-16 md:flex md:flex-row-reverse md:items-center md:space-x-reverse md:space-x-8">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Great Comfort</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                    nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Travel Comfort" class="w-full h-64 object-cover rounded-lg">
+            </div>
+        </section>
+
+        <!-- Safety Section -->
+        <section class="mb-16 md:flex md:items-center md:space-x-8">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Safety</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                    nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+                    alt="Safety Features" class="w-full h-64 object-cover rounded-lg">
+            </div>
+        </section>
+
+        <!-- Read More Button -->
+        <div class="text-center">
+            <button class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors">
+                Read More
+            </button>
+        </div>
+    </main>
+
+    <footer class="bg-[#0b2438] text-white pt-10 pb-2">
+        <div class="container mx-auto px-4 pt-8">
+            <!-- Grid Layout for Desktop and Mobile -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- Company Info -->
-                <div class="col-span-1">
-                    <div class="flex items-center mb-4">
-                        <span class="text-green-500 text-2xl font-bold mr-2">M</span>
-                        <span class="font-bold">MADHURAM TRAVELS</span>
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="./assets/image/logo.png" alt="Madhuram Travels Logo" class="w-full h-10">
                     </div>
-                    <p class="text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad assumenda fuga illo iusto tempore magni.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.897 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.897-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-                            </svg>
-                        </a>
-                    </div>
+                    <p class="text-base text-white">
+                        Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo laudantium magni. Amet
+                        atque aut autem will to a consectetur.
+                    </p>
                 </div>
-
-                <!-- Useful Links -->
+    
+                <!-- Useful Links Section -->
                 <div>
-                    <h3 class="text-lg font-bold mb-4">Useful Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Confirm Plan Booking</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Offers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Gallery</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Amenities</a></li>
+                    <h4 class="text-xl font-semibold mb-4 text-center">Useful Links</h4>
+                    <ul class="space-y-2 text-center">
+                        <li><a href="#" class="text-base">Confirm Phone Booking</a></li>
+                        <li><a href="#" class="text-base">Offers</a></li>
+                        <li><a href="#" class="text-base">About Us</a></li>
+                        <li><a href="#" class="text-base">Gallery</a></li>
+                        <li><a href="#" class="text-base">Amenities</a></li>
                     </ul>
                 </div>
-
-                <!-- More Links -->
+    
+                <!-- More Section -->
                 <div>
-                    <h3 class="text-lg font-bold mb-4">More</h3>
+                    <h4 class="text-xl font-semibold mb-4">More</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a></li>
+                        <li><a href="#" class="text-base">About Us</a></li>
+                        <li><a href="#" class="text-base">Privacy Policy</a></li>
+                        <li><a href="#" class="text-base">Terms & Conditions</a></li>
                     </ul>
                 </div>
-
-                <!-- Contact Info -->
+    
+                <!-- Contact Section -->
                 <div>
-                    <h3 class="text-lg font-bold mb-4">Contact US</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-start space-x-2">
-                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            </svg>
-                            <span class="text-gray-400">Madhuram Travels, 3-Hem Chambers, Nikol-Naroda, Ahmedabad, Gujarat-null</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                            </svg>
-                            <span class="text-gray-400">+91 7878182231</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                            <span class="text-gray-400">madhurumtravels111@gmail.com</span>
-                        </li>
-                    </ul>
+                    <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+                    <p class="text-base flex items-start mb-4">
+                        <img src="./assets/image/location.png" alt="" class="mr-2"> 
+                        <span>
+                            Madhuram Travels, 3, Hiren Chambers,<br>
+                            Thakkarnagar Approach, N.H.8,<br>
+                            Bapunagar, Ahmedabad, Gujarat-null
+                        </span>
+                    </p>
+                    
+                    <p class="text-base flex items-center mb-4">
+                        <img src="./assets/image/email.png" alt="" class="mr-2"> 
+                        +91 7878102231
+                    </p>
+    
+                    <p class="text-base flex items-center">
+                        <img src="./assets/image/phone.png" alt="" class="mr-2"> 
+                        neelkanthmadhuramtravels111@gmail.com
+                    </p>
                 </div>
             </div>
-
-            <!-- Copyright -->
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-                <p>© 2023 All Rights reserved. Madhuram Travels</p>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="mt-8 border-t border-gray-600 pt-4 text-center w-full">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-center w-full px-4">
+                    <div class="flex space-x-4 mr-auto">
+                        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+    
+                    <p class="text-base text-center w-full">
+                        © 2023 All Rights Reserved. Madhuram Travels
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
+    
+    <!-- Custom Mobile Layout for Useful Links and More Sections -->
+    <style>
+        @media (max-width: 767px) {
+            .grid {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .grid > div {
+                flex: 1 1 45%;
+                margin-right: 5%;
+                margin-bottom: 16px;
+            }
+            .grid > div:last-child {
+                margin-right: 0;
+            }
+        }
+    </style>
+    
+    
+
+
 </body>
+
 </html>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.getElementById("menu-toggle");
+        const closeButton = document.getElementById("close-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuIcon = document.getElementById("menu-icon");
+        const closeIcon = document.getElementById("close-icon");
+
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.remove("hidden");
+            menuIcon.classList.add("hidden");
+            closeIcon.classList.remove("hidden");
+        });
+
+        closeButton.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+            menuIcon.classList.remove("hidden");
+            closeIcon.classList.add("hidden");
+        });
+    });
+
+</script>
