@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./assets/style.css">
-
 </head>
+
 <body>
     <header class="bg-white shadow-sm">
         <div class="container mx-auto px-4 py-4">
@@ -51,7 +52,7 @@
         <nav id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 flex flex-col justify-between">
             <div class="flex items-center justify-between px-4 py-4">
                 <img src="./assets/image/logo.png" alt="Madhuram Travels Logo" class="w-80 h-10 object-contain">
-    
+
                 <button id="close-button">
                     <svg id="close-icon-menu" class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -78,6 +79,302 @@
 
     </header>
 
+    <!-- Hero Section -->
+    <div class="max-w-[1680px] mx-auto px-4 mb-10">
+        <div class="relative h-[300px] md:h-[540px] w-full overflow-hidden rounded-[3rem] mb-4 md:mb-24">
+            <img src="./assets/image/contact.png" alt="Traveler" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-[#1C1C1C]/70"></div>
+            <h1
+                class="absolute top-1/2 left-20 transform -translate-y-1/2 text-4xl md:text-7xl font-extrabold text-white font-lato">
+                Manage Booking
+            </h1>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto">
+        <!-- Details Section -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Form -->
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold text-gray-800">Please Enter Your Details</h2>
+                <form class="space-y-4">
+                    <div class="space-y-2">
+                        <label class="block text-sm text-gray-600">Ticket Number</label>
+                        <input type="text" placeholder="Number"
+                            class="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm text-gray-600">Email/PhoneNumber</label>
+                        <input type="text" placeholder="YourPhone Number"
+                            class="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none">
+                    </div>
+                    <button class="bg-green-600 text-white px-8 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                        Search
+                    </button>
+                </form>
+            </div>
+
+            <!-- Action Cards -->
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Update Ticket -->
+                <div class="bg-[#4267B2] rounded-xl p-6 text-white">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-white/20 rounded-full p-2">
+                            <img src="path-to-icon" alt="" class="w-8 h-8">
+                        </div>
+                        <div>
+                            <span class="text-sm opacity-80">Bus</span>
+                            <h3 class="font-semibold">Update The Ticket</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cancel Ticket -->
+                <div class="bg-[#2E7D32] rounded-xl p-6 text-white">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-white/20 rounded-full p-2">
+                            <img src="path-to-icon" alt="" class="w-8 h-8">
+                        </div>
+                        <div>
+                            <span class="text-sm opacity-80">Bus</span>
+                            <h3 class="font-semibold">Cancel The Ticket</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postpone Ticket -->
+                <div class="bg-[#C62828] rounded-xl p-6 text-white">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-white/20 rounded-full p-2">
+                            <img src="path-to-icon" alt="" class="w-8 h-8">
+                        </div>
+                        <div>
+                            <span class="text-sm opacity-80">Bus</span>
+                            <h3 class="font-semibold">Postpone The Ticket</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Print Ticket -->
+                <div class="bg-[#6A1B9A] rounded-xl p-6 text-white">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-white/20 rounded-full p-2">
+                            <img src="path-to-icon" alt="" class="w-8 h-8">
+                        </div>
+                        <div>
+                            <span class="text-sm opacity-80">Bus</span>
+                            <h3 class="font-semibold">Print The Ticket</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Book Section -->
+    <section class="py-16 px-4 relative">
+        <div class="container mx-auto px-4 py-4">
+            <div class="absolute bottom-0 left-0 z-[1] bg-bottom-left-image w-[240px] h-[400px] bg-no-repeat"></div>
+            <div class="flex justify-between items-center mb-8">
+                <div class="text-left w-full">
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-[#3D3838] mb-8 font-lato">Quick Book</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3 pb-0">
+                    <img src="./assets/image/Rectangle .png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1 w-1/2">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Ahmedabad</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Somnath</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3">
+                    <img src="./assets/image/Rectangle-1.png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1 w-1/2">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Ahmedabad</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Vapi</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3">
+                    <img src="./assets/image/Rectangle-2.png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1 w-1/2">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Baroda</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Mumbai</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3">
+                    <img src="./assets/image/Rectangle-3.png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1 w-1/2">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Ahmedabad</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Surat</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3 pb-0">
+                    <img src="./assets/image/Rectangle-4.png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Dhoraji</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Ahmedabad</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3">
+                    <img src="./assets/image/Rectangle-5.png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Junagadh</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Mangrol</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3">
+                    <img src="./assets/image/Rectangle-6.png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Anand</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Mumbai</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3">
+                    <img src="./assets/image/Rectangle-7.png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Ahmedabad</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Navsari</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3 pb-0">
+                    <img src="./assets/image/Rectangle .png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Ahmedabad</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Somnath</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3">
+                    <img src="./assets/image/Rectangle-1.png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Ahmedabad</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Vapi</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3">
+                    <img src="./assets/image/Rectangle-2.png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Ahmedabad</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Mumbai</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border-2 border-[#EDEDED] overflow-hidden group p-3">
+                    <img src="./assets/image/Rectangle-3.png" alt="Ahmedabad"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="flex items-center">
+                        <div class="flex-1">
+                            <h3 class="font-normal text-[#000000] font-lato text-2xl mb-3">Ahmedabad</h3>
+                            <p class="text-[#069414] text-2xl font-normal font-lato mb-3">Surat</p>
+                            <img src="./assets/image/Arrow 4.png" alt="Arrow">
+                        </div>
+                        <div class="w-1/2">
+                            <img src="./assets/image/side2.png" alt="Side" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <button
+                    class="bg-[#069414] text-white px-6 py-2 rounded-md text-xl font-lato font-semibold transition-colors">
+                    Load More
+                </button>
+            </div>
+        </div>
+    </section>
+    </div>
+
     <footer class="bg-[#0b2438] text-white pt-10 pb-2">
         <div class="container mx-auto px-4 pt-8">
             <!-- Grid Layout for Desktop and Mobile -->
@@ -91,7 +388,7 @@
                         atque aut autem will to a consectetur.
                     </p>
                 </div>
-    
+
                 <!-- Useful Links Section -->
                 <div>
                     <h4 class="text-xl font-semibold mb-4 text-center">Useful Links</h4>
@@ -103,7 +400,7 @@
                         <li><a href="#" class="text-base">Amenities</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- More Section -->
                 <div>
                     <h4 class="text-xl font-semibold mb-4">More</h4>
@@ -113,32 +410,32 @@
                         <li><a href="#" class="text-base">Terms & Conditions</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Contact Section -->
                 <div>
                     <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
                     <p class="text-base flex items-start mb-4">
-                        <img src="./assets/image/location.png" alt="" class="mr-2"> 
+                        <img src="./assets/image/location.png" alt="" class="mr-2">
                         <span>
                             Madhuram Travels, 3, Hiren Chambers,<br>
                             Thakkarnagar Approach, N.H.8,<br>
                             Bapunagar, Ahmedabad, Gujarat-null
                         </span>
                     </p>
-                    
+
                     <p class="text-base flex items-center mb-4">
-                        <img src="./assets/image/email.png" alt="" class="mr-2"> 
+                        <img src="./assets/image/email.png" alt="" class="mr-2">
                         +91 7878102231
                     </p>
-    
+
                     <p class="text-base flex items-center">
-                        <img src="./assets/image/phone.png" alt="" class="mr-2"> 
+                        <img src="./assets/image/phone.png" alt="" class="mr-2">
                         neelkanthmadhuramtravels111@gmail.com
                     </p>
                 </div>
             </div>
         </div>
-    
+
         <!-- Footer Bottom -->
         <div class="mt-8 border-t border-gray-600 pt-4 text-center w-full">
             <div class="container mx-auto">
@@ -148,7 +445,7 @@
                         <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
                     </div>
-    
+
                     <p class="text-base text-center w-full">
                         © 2023 All Rights Reserved. Madhuram Travels
                     </p>
@@ -157,6 +454,7 @@
         </div>
     </footer>
 </body>
+
 </html>
 
 
@@ -182,4 +480,3 @@
     });
 
 </script>
-
