@@ -11,74 +11,74 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="bg-white shadow-sm">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-
-                <div class="flex items-center space-x-2">
-                    <img src="./assets/image/logo.png" alt="Madhuram Travels Logo" class="w-80 h-10 object-contain">
-                </div>
-
-                <nav class="hidden md:flex items-center space-x-6 flex-grow justify-center">
-                    <a href="Home.html" class="text-gray-700 hover:text-green-600">Home</a>
-                    <a href="AboutUs.html" class="text-gray-700 hover:text-green-600">About Us</a>
-                    <a href="ManageBooking.html" class="text-gray-700 hover:text-green-600">Manage Bookings</a>
-                    <a href="Gallery.html" class="text-gray-700 hover:text-green-600">Gallery</a>
-                    <a href="ContactUs.html" class="text-gray-700 hover:text-green-600">Contact Us</a>
-                </nav>
-
-                <div class="hidden md:block">
-                    <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">
-                        Agent Login
+        <!-- Heder -->
+        <header class="bg-white shadow-sm">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex items-center justify-between">
+    
+                    <div class="flex items-center space-x-2">
+                        <img src="./assets/image/logo.png" alt="Madhuram Travels Logo" class="w-80 h-10 object-contain">
+                    </div>
+    
+                    <nav class="hidden md:flex items-center space-x-6 flex-grow justify-center">
+                        <a href="Home.html" class="text-[#0E1114] text-lg font-medium hover:text-[#007F06] ">Home</a>
+                        <a href="AboutUs.html" class="text-[#0E1114] text-lg font-medium hover:text-[#007F06]">About Us</a>
+                        <a href="ManageBooking.html" class="text-[#0E1114] text-lg font-medium hover:text-[#007F06]">Manage Bookings</a>
+                        <a href="Gallery.html" class="text-[#0E1114] text-lg font-medium hover:text-[#007F06]">Gallery</a>
+                        <a href="ContactUs.html" class="text-[#0E1114] text-lg font-medium hover:text-[#007F06]">Contact Us</a>
+                    </nav>
+    
+                    <div class="hidden md:block">
+                        <button class="bg-[#069414] text-white px-7 py-3 rounded rounded-md text-lg font-semibold	">
+                            Agent Login
+                        </button>
+                    </div>
+    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="menu-toggle" class="md:hidden" aria-label="Toggle menu">
+                        <svg id="menu-icon" class="w-6 h-6 text-[#0E1114]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="close-icon" class="w-6 h-6 text-[#0E1114] hidden" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                            </path>
+                        </svg>
                     </button>
                 </div>
-
-                <!-- Mobile Menu Toggle -->
-                <button id="menu-toggle" class="md:hidden" aria-label="Toggle menu">
-                    <svg id="menu-icon" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                    <svg id="close-icon" class="w-6 h-6 text-gray-700 hidden" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
             </div>
-        </div>
-        <!-- Mobile Menu -->
-        <nav id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 flex flex-col justify-between">
-            <div class="flex items-center justify-between px-4 py-4">
-                <img src="./assets/image/logo.png" alt="Madhuram Travels Logo" class="w-80 h-10 object-contain">
-
-                <button id="close-button">
-                    <svg id="close-icon-menu" class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-
-            <div class="flex flex-col items-center justify-center flex-grow space-y-6">
-                <a href="Home.html" class="text-gray-700 hover:text-green-600 text-xl">Home</a>
-                <a href="AboutUs.html" class="text-gray-700 hover:text-green-600 text-xl">About Us</a>
-                <a href="ManageBooking.html" class="text-gray-700 hover:text-green-600 text-xl">Manage Bookings</a>
-                <a href="Gallery.html" class="text-gray-700 hover:text-green-600 text-xl">Gallery</a>
-                <a href="ContactUs.html" class="text-gray-700 hover:text-green-600 text-xl">Contact Us</a>
-            </div>
-
-            <div class="relative">
-                <img src="./assets/image/side.png" alt="Footer Image"
-                    class="absolute left-0 bottom-0 w-80 h-auto opacity-50 transform rotate-30"
-                    style="top: auto; left: -83px;">
-            </div>
-        </nav>
-
-    </header>
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 flex flex-col justify-between">
+                <div class="flex items-center justify-between px-4 py-4">
+                    <img src="./assets/image/logo.png" alt="Madhuram Travels Logo" class="w-80 h-10 object-contain">
+    
+                    <button id="close-button">
+                        <svg id="close-icon-menu" class="w-8 h-8 text-[#0E1114]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+    
+                <div class="flex flex-col items-center justify-center flex-grow space-y-6">
+                    <a href="Home.html" class="text-[#0E1114] hover:text-[#007F06] text-xl">Home</a>
+                    <a href="AboutUs.html" class="text-[#0E1114] hover:text-[#007F06] text-xl">About Us</a>
+                    <a href="ManageBooking.html" class="text-[#0E1114] hover:text-[#007F06] text-xl">Manage Bookings</a>
+                    <a href="Gallery.html" class="text-[#0E1114] hover:text-[#007F06] text-xl">Gallery</a>
+                    <a href="ContactUs.html" class="text-[#0E1114] hover:text-[#007F06] text-xl">Contact Us</a>
+                </div>
+    
+                <div class="relative">
+                    <img src="./assets/image/side.png" 
+                        class="absolute left-0 bottom-0 w-80 h-auto opacity-50 transform rotate-30"
+                        style="top: auto; left: -83px;">
+                </div>
+            </nav>
+    
+        </header>
 
     <!-- Hero Section -->
     <div class="max-w-[1680px] mx-auto px-4 mb-10">

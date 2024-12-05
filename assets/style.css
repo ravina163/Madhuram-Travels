@@ -24,3 +24,14 @@ body,.font-lato {
     background-image: url('./image/review.png');
     background-position: bottom left;
 }
+
+.bg-gallery-one{
+    background-image: url('./image/pngwing\ 42.png');
+}
+.bg-gallery-top{
+    background-image: url('./image/pngwing\ 45.png');
+}
+.bg-gallery-two{
+    background-image: url('./image/review.png');
+    background-position: bottom right;
+}

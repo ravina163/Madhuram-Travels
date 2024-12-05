@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./assets/style.css">
-
 </head>
+
 <body>
-    <header class="bg-white shadow-sm">
+       <!-- Heder -->
+       <header class="bg-white shadow-sm">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
 
@@ -19,27 +21,27 @@
                 </div>
 
                 <nav class="hidden md:flex items-center space-x-6 flex-grow justify-center">
-                    <a href="Home.html" class="text-gray-700 hover:text-green-600">Home</a>
-                    <a href="AboutUs.html" class="text-gray-700 hover:text-green-600">About Us</a>
-                    <a href="ManageBooking.html" class="text-gray-700 hover:text-green-600">Manage Bookings</a>
-                    <a href="Gallery.html" class="text-gray-700 hover:text-green-600">Gallery</a>
-                    <a href="ContactUs.html" class="text-gray-700 hover:text-green-600">Contact Us</a>
+                    <a href="Home.html" class="text-[#0E1114] text-lg font-medium hover:text-[#007F06] ">Home</a>
+                    <a href="AboutUs.html" class="text-[#0E1114] text-lg font-medium hover:text-[#007F06]">About Us</a>
+                    <a href="ManageBooking.html" class="text-[#0E1114] text-lg font-medium hover:text-[#007F06]">Manage Bookings</a>
+                    <a href="Gallery.html" class="text-[#0E1114] text-lg font-medium hover:text-[#007F06]">Gallery</a>
+                    <a href="ContactUs.html" class="text-[#0E1114] text-lg font-medium hover:text-[#007F06]">Contact Us</a>
                 </nav>
 
                 <div class="hidden md:block">
-                    <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">
+                    <button class="bg-[#069414] text-white px-7 py-3 rounded rounded-md text-lg font-semibold	">
                         Agent Login
                     </button>
                 </div>
 
                 <!-- Mobile Menu Toggle -->
                 <button id="menu-toggle" class="md:hidden" aria-label="Toggle menu">
-                    <svg id="menu-icon" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor"
+                    <svg id="menu-icon" class="w-6 h-6 text-[#0E1114]" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
-                    <svg id="close-icon" class="w-6 h-6 text-gray-700 hidden" fill="none" stroke="currentColor"
+                    <svg id="close-icon" class="w-6 h-6 text-[#0E1114] hidden" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
                         </path>
@@ -51,9 +53,9 @@
         <nav id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 flex flex-col justify-between">
             <div class="flex items-center justify-between px-4 py-4">
                 <img src="./assets/image/logo.png" alt="Madhuram Travels Logo" class="w-80 h-10 object-contain">
-    
+
                 <button id="close-button">
-                    <svg id="close-icon-menu" class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor"
+                    <svg id="close-icon-menu" class="w-8 h-8 text-[#0E1114]" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
                         </path>
@@ -62,15 +64,15 @@
             </div>
 
             <div class="flex flex-col items-center justify-center flex-grow space-y-6">
-                <a href="Home.html" class="text-gray-700 hover:text-green-600 text-xl">Home</a>
-                <a href="AboutUs.html" class="text-gray-700 hover:text-green-600 text-xl">About Us</a>
-                <a href="ManageBooking.html" class="text-gray-700 hover:text-green-600 text-xl">Manage Bookings</a>
-                <a href="Gallery.html" class="text-gray-700 hover:text-green-600 text-xl">Gallery</a>
-                <a href="ContactUs.html" class="text-gray-700 hover:text-green-600 text-xl">Contact Us</a>
+                <a href="Home.html" class="text-[#0E1114] hover:text-[#007F06] text-xl">Home</a>
+                <a href="AboutUs.html" class="text-[#0E1114] hover:text-[#007F06] text-xl">About Us</a>
+                <a href="ManageBooking.html" class="text-[#0E1114] hover:text-[#007F06] text-xl">Manage Bookings</a>
+                <a href="Gallery.html" class="text-[#0E1114] hover:text-[#007F06] text-xl">Gallery</a>
+                <a href="ContactUs.html" class="text-[#0E1114] hover:text-[#007F06] text-xl">Contact Us</a>
             </div>
 
             <div class="relative">
-                <img src="./assets/image/side.png" alt="Footer Image"
+                <img src="./assets/image/side.png" 
                     class="absolute left-0 bottom-0 w-80 h-auto opacity-50 transform rotate-30"
                     style="top: auto; left: -83px;">
             </div>
@@ -90,7 +92,32 @@
         </div>
     </div>
 
-
+    <section class="py-1 px-4 relative">
+         <!-- Decorative Background Images -->
+         <div class="absolute -top-24 right-0 z-[1] bg-gallery-top w-[295px] h-[224px] bg-no-repeat hidden md:block"></div>
+         <div class="absolute inset-y-2/3 left-0 z-[1] bg-gallery-one w-[402px] h-[169px] bg-no-repeat hidden md:block"></div>
+         <div class="absolute bottom-0 right-0 z-[1] bg-gallery-two w-[377px] h-[320px] bg-no-repeat hidden md:block"></div>
+       
+         <div class="container mx-auto px-5 relative">
+            <!-- Main Content -->
+            <div class="grid grid-cols-2 gap-4 pb-12 md:pb-24">
+                <!-- Left Column Images -->
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <img src="./assets/image/gallerypage-1.png" alt="Travel Illustration" class="w-[167px] h-[182px] md:w-[710px] md:h-[778px] rounded-lg">
+                    <img src="./assets/image/gallerypage-3.png" alt="Travel Illustration" class="w-[167px] h-[182px] md:w-[710px] md:h-[778px] rounded-lg md:mt-5">
+                    <img src="./assets/image/gallerypage-5.png" alt="Travel Illustration" class="w-[167px] h-[110px] md:w-[710px] md:h-[360px] rounded-lg md:mt-5">
+                    <img src="./assets/image/gallerypage-6.png" alt="Travel Illustration" class="w-[167px] h-[110px] md:w-[710px] md:h-[553px] rounded-lg md:mt-5">
+                </div>
+                <!-- Right Column Images -->
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <img src="./assets/image/gallerypage-2.png" alt="Travel Illustration" class="w-[167px] h-[182px] md:w-[710px] md:h-[778px] mt-12 rounded-lg md:mt-24">
+                    <img src="./assets/image/gallerypage-4.png" alt="Travel Illustration" class="w-[167px] h-[182px] md:w-[710px] md:h-[778px] rounded-lg">
+                    <img src="./assets/image/gallerypage-6.png" alt="Travel Illustration" class="w-[167px] h-[182px] md:w-[710px] md:h-[778px] rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <footer class="bg-[#0b2438] text-white pt-10 pb-2">
         <div class="container mx-auto px-4 pt-8">
             <!-- Grid Layout for Desktop and Mobile -->
@@ -104,7 +131,7 @@
                         atque aut autem will to a consectetur.
                     </p>
                 </div>
-    
+
                 <!-- Useful Links Section -->
                 <div>
                     <h4 class="text-xl font-semibold mb-4 text-center">Useful Links</h4>
@@ -116,7 +143,7 @@
                         <li><a href="#" class="text-base">Amenities</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- More Section -->
                 <div>
                     <h4 class="text-xl font-semibold mb-4">More</h4>
@@ -126,32 +153,32 @@
                         <li><a href="#" class="text-base">Terms & Conditions</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Contact Section -->
                 <div>
                     <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
                     <p class="text-base flex items-start mb-4">
-                        <img src="./assets/image/location.png" alt="" class="mr-2"> 
+                        <img src="./assets/image/location.png" alt="" class="mr-2">
                         <span>
                             Madhuram Travels, 3, Hiren Chambers,<br>
                             Thakkarnagar Approach, N.H.8,<br>
                             Bapunagar, Ahmedabad, Gujarat-null
                         </span>
                     </p>
-                    
+
                     <p class="text-base flex items-center mb-4">
-                        <img src="./assets/image/email.png" alt="" class="mr-2"> 
+                        <img src="./assets/image/email.png" alt="" class="mr-2">
                         +91 7878102231
                     </p>
-    
+
                     <p class="text-base flex items-center">
-                        <img src="./assets/image/phone.png" alt="" class="mr-2"> 
+                        <img src="./assets/image/phone.png" alt="" class="mr-2">
                         neelkanthmadhuramtravels111@gmail.com
                     </p>
                 </div>
             </div>
         </div>
-    
+
         <!-- Footer Bottom -->
         <div class="mt-8 border-t border-gray-600 pt-4 text-center w-full">
             <div class="container mx-auto">
@@ -161,7 +188,7 @@
                         <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
                     </div>
-    
+
                     <p class="text-base text-center w-full">
                         © 2023 All Rights Reserved. Madhuram Travels
                     </p>
@@ -170,6 +197,7 @@
         </div>
     </footer>
 </body>
+
 </html>
 
 
@@ -195,5 +223,3 @@
     });
 
 </script>
-
-
